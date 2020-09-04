@@ -1,0 +1,13 @@
+version: '1'
+services:
+    front-end:
+        image: m9n0lo/sveltejs-from:1.0
+        ports: 
+          - 3000:3000
+        depends_on:
+          - backend
+    backend:
+        image: m9n0lo/colmena-back:1.0
+        ports: 
+          - 3000:3000
+        
